@@ -1,0 +1,3 @@
+aux.AddSynchroProcedure(c,nil,aux.NonTuner(nil),1)
+
+:GetCount()

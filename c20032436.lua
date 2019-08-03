@@ -1,0 +1,74 @@
+--Jekyo & Hydowaku
+function c20032436.initial_effect(c)
+	-- --atk
+	-- local e1=Effect.CreateEffect(c)
+	-- e1:SetType(EFFECT_TYPE_SINGLE)
+	-- e1:SetCode(EFFECT_ADD_TYPE)
+	-- e1:SetProperty(EFFECT_FLAG_SINGLE_RANGE)
+	-- e1:SetRange(LOCATION_MZONE)
+	-- e1:SetCondition(c20032436.cona)
+	-- e1:SetValue(TYPE_TUNER)
+	-- c:RegisterEffect(e1)
+	-- --atk
+	-- local e2=Effect.CreateEffect(c)
+	-- e2:SetType(EFFECT_TYPE_SINGLE)
+	-- e2:SetCode(EFFECT_SWAP_AD)
+	-- e2:SetCondition(c20032436.cona)
+	-- e2:SetValue(1)
+	-- c:RegisterEffect(e2)
+	-- --atk
+	-- local e3=Effect.CreateEffect(c)
+	-- e3:SetType(EFFECT_TYPE_SINGLE)
+	-- e3:SetProperty(EFFECT_FLAG_SINGLE_RANGE)
+	-- e3:SetRange(LOCATION_MZONE)
+	-- e3:SetCode(EFFECT_CHANGE_LEVEL)
+	-- e3:SetCondition(c20032436.cona)
+	-- e3:SetValue(4)
+	-- c:RegisterEffect(e3)
+	-- --def
+	-- local e4=Effect.CreateEffect(c)
+	-- e4:SetDescription(aux.Stringid(92720564,0))
+	-- e4:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_TRIGGER_O)
+	-- e4:SetCode(EVENT_BE_BATTLE_TARGET)
+	-- e4:SetCountLimit(1)
+	-- e4:SetRange(LOCATION_MZONE)
+	-- e4:SetCondition(c20032436.cond)
+	-- e4:SetOperation(c20032436.opd)
+	-- c:RegisterEffect(e4)
+	-- --pos
+	-- local e5=Effect.CreateEffect(c)
+	-- e5:SetDescription(aux.Stringid(72370114,0))
+	-- e5:SetCategory(CATEGORY_POSITION)
+	-- e5:SetType(EFFECT_TYPE_IGNITION)
+	-- e5:SetRange(LOCATION_MZONE)
+	-- e5:SetCountLimit(1)
+	-- e5:SetTarget(c20032436.target)
+	-- e5:SetOperation(c20032436.operation)
+	-- c:RegisterEffect(e5)
+end
+-- function c20032436.cona(e)
+	-- return e:GetHandler():IsAttackPos()
+-- end
+
+-- function c20032436.cond(e,tp,eg,ep,ev,re,r,rp)
+	-- local c=e:GetHandler()
+	-- local d=Duel.GetAttackTarget()
+	-- return not c:IsDisabled() and c:IsDefensePos() and d:IsFaceup()
+-- end
+-- function c20032436.opd(e,tp,eg,ep,ev,re,r,rp)
+	-- if Duel.NegateAttack() then
+	-- Duel.Draw(tp,1,REASON_EFFECT)
+-- end
+-- end
+
+-- function c20032436.target(e,tp,eg,ep,ev,re,r,rp,chk)
+	-- if chk==0 then return true end
+	-- Duel.SetOperationInfo(0,CATEGORY_POSITION,e:GetHandler(),1,0,0)
+-- end
+-- function c20032436.operation(e,tp,eg,ep,ev,re,r,rp)
+	-- local c=e:GetHandler()
+	-- if c:IsRelateToEffect(e) then
+		-- Duel.ChangePosition(c,POS_FACEUP_DEFENSE,POS_FACEDOWN_DEFENSE,POS_FACEUP_ATTACK,POS_FACEUP_ATTACK)
+	-- end
+-- end
+

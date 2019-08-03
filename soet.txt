@@ -1,0 +1,8 @@
+g=Duel.SelectXyzMaterial(tp,c,f,lv,minc,maxc,og)
+				if g then
+					g:KeepAlive()
+					e:SetLabelObject(g)
+					return true
+				else return false end
+			end
+end
